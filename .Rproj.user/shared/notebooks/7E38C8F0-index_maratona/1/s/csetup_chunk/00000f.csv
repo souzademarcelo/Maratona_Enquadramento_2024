@@ -1,0 +1,7 @@
+"0","knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, warning = FALSE, results='asis')"
+"0",""
+"0","## instruções para publicação no github: https://youtu.be/0GjUWgl03vA"
+"0",""
+"0","#git >- more >- shell >- git add . >- git commit -m ""xxx built"" ."
+"0","#https://github.com/souzademarcelo/Qualidade_da_Agua_2023.github.io.git"
+"0",""
