@@ -1,11 +1,3 @@
----
-title:  <font size="6">**Maratona de Enquadramento**</font>
-author: 
-- <font size="4">**Coordenação de Qualidade de Água e Enquadramento - CQUAL**</font>
-- <font size="4">**Superintendência de Estudos Hídricos e Socioeconômicos - SHE**</font>
-- <font size="4">**Agência Nacional de Águas e Saneamento Básico**</font>
----
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, warning = FALSE, results='asis')
@@ -21,21 +13,28 @@ knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, warning = FALSE, results='as
 ```{r packs, echo=FALSE, warning=FALSE, results='hide', message=FALSE}
 library(dplyr)
 library(vembedr)
-
-
 library(htmltools)
-
 library(shinyWidgets)
 library(readr)
 library(tidyverse)
 library(knitr)
-library(kableExtra)
 library(htmlwidgets)
-library(leafpop)
 
 #library(rgdal) retired package
 ```
 
+
+```{r logo, out.width='15%', out.extra='style="float:right; padding:10px"', echo = FALSE}
+
+knitr::include_graphics("logo-6.png")
+
+```
+
+##### **Coordenação de Qualidade de Água e Enquadramento - CQUAL**
+##### **Superintendência de Estudos Hídricos e Socioeconômicos - SHE**
+ 
+
+# **Maratona de Enquadramento**
 
 ### **Apresentação**
 
@@ -44,9 +43,9 @@ A Coordenação de Qualidade de Água e Enquadramento (CQUAL/SHE) tem se dedicad
 Assim, surgiu a ideia de promover uma Maratona de Enquadramento na qual especialistas de diversas instituições compartilharão experiências e ideias em busca de soluções para superar os principais gargalos para a implementação do ECA.  
 
 
-### **Objetivo**
+### **Objetivo e Metodologia**
 
-Exercitar a inteligência coletiva com o intuito de consolidar propostas para o aperfeiçoamento e fortalecimento deste instrumento.  
+Noso objetivo é exercitar a inteligência coletiva com o intuito de consolidar propostas para o aperfeiçoamento e fortalecimento deste instrumento.  
 
 ```{r inteligencia, echo = FALSE, collapse = TRUE, warning = FALSE}
 
@@ -54,13 +53,30 @@ embed_url("https://youtu.be/zovtnO7da4I?si=RbvbINqy9YsvDiX7")
 
 ```
 
-### **Data e Local**
+A teoria da inteligência coletiva refere-se à ideia de que grupos de indivíduos podem colaborar e trabalhar juntos para atingir um nível de inteligência e capacidade de resolução de problemas que supera as habilidades de qualquer membro do grupo. Este conceito está enraizado em vários princípios-chave e tem sido explorado em vários campos, incluindo psicologia, sociologia, negócios e ciência da computação.
 
-**5 a 7 de março de 2024**
+#### **Princípios**:
+- Diversidade de conhecimentos: um grupo com uma ampla gama de competências e perspectivas pode muitas vezes resolver problemas de forma mais eficaz do que um grupo homogêneo.
+- Descentralização: A tomada de decisões e a resolução de problemas são distribuídas entre os membros do grupo, em vez de serem centralizadas num único líder.
+- Agregação de informações: A inteligência coletiva depende da capacidade de agregar e sintetizar informações de diversas fontes, muitas vezes facilitada pela tecnologia.
 
-**Agência Nacional de Águas e Saneamento Básico**    
-Sala de Capacitação da SAS  
-Setor Policial, Área 5, Quadra 3, Bloco L
+#### **Exemplos de inteligência coletiva**
+
+- Nas organizações, a inteligência coletiva é usada para brainstorming, planejamento estratégico e solução de problemas.
+- As colaborações científicas, muitas vezes abrangendo vários países e disciplinas, são exemplos de inteligência colectiva em ação.
+- Projetos como a Wikipedia ou o desenvolvimento de software de código aberto demonstram inteligência coletiva no mundo digital.
+
+#### **Por que escolher a inteligência coletiva?**
+- Diversidade de perspectivas (mais insight e menos pontos cegos e vieses)
+- Capacidade de resolver problemas aumentada (abordagem multidisciplinar, sinergia)
+- Melhor tomada de decisão (conjunto mais rico de ideias e avaliação crítica)
+- Rapidez na resolução de problemas - plataformas colaborativas, internet
+ 
+#### **Pré-requisitos para um ambiente propício à inteligência coletiva:**
++ Identificar problemas/desafios concretos que precisem de soluções práticas
++ Identificar pessoas engajadas em resolver esses problemas/desafios
++ Criar um ambiente aconchegante para que todos sintam-se dispostos a contribuir e dar o seu melhor (ambiente sem hierarquias desnecessárias, animado, com comida, liberdade/autonomia e algum conforto)
++ Ter a mente aberta e tentar vários caminhos para resolver os problemas/desafios
 
 
 ### **Delineamento Metodológico**
@@ -73,13 +89,21 @@ embed_url("https://youtu.be/ffolPw5I32I?si=i2zdZap7R-qZH6NC")
 
 ```
 
-- Desafios relativos à implementação do ECA serão propostos para a discussão em grupos de trabalho.
+#### **Etapas da Maratona**
 
-- A formação dos grupos ocorrerá de forma voluntária, de acordo com o interesse dos participantes, e os participantes terão liberdade para intercambiar com outros grupos, caso haja interesse pessoal por outro tema ou discussão, desde que se mantenha um número mínimo de pessoas por grupo para que nenhum desafio seja “abandonado”. 
+1. Desafios relativos à implementação do ECA serão propostos para a discussão em grupos de trabalho.
 
-- Os grupos apresentarão suas propostas (pitch session), que serão discutidas com os demais participantes do evento.
+2. A formação dos grupos ocorrerá de forma voluntária, de acordo com o interesse dos participantes, e os participantes terão liberdade para intercambiar com outros grupos, caso haja interesse pessoal por outro tema ou discussão, desde que se mantenha um número mínimo de pessoas por grupo para que nenhum desafio seja “abandonado”. 
 
-- As propostas serão consolidadas ao final do evento e estarão prontas para compor um produto a ser divulgado e encaminhado ao CONAMA e CNRH a fim de que o instrumento ECA seja efetivamente aprimorado. Também poderão ser escritos artigos em periódicos.
+3. Os grupos apresentarão suas propostas (pitch session), que serão discutidas com os demais participantes do evento.
+
+4. As propostas serão consolidadas ao final do evento e estarão prontas para compor um produto a ser divulgado e encaminhado ao CONAMA e CNRH a fim de que o instrumento ECA seja efetivamente aprimorado. Também poderão ser escritos artigos em periódicos.   
+
+### **Local e Data**
+
+Agência Nacional de Águas e Saneamento Básico - de 5 a 7 de março de 2024   
+Setor Policial, Área 5, Quadra 3, Bloco L
+Sala de Capacitação da SAS  
 
 ### **Programação**
 
